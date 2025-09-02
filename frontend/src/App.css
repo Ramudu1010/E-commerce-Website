@@ -1,0 +1,40 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f3f6; /* Consistent background color */
+}
+
+/* Color Variables (inspired by Flipkart) */
+:root {
+  --primary-color: #2874f0; /* Flipkart Blue */
+  --secondary-color: #fb641b; /* Flipkart Orange (for buttons/accents) */
+  --text-color: #212121;
+  --light-text-color: #878787;
+  --background-color: #f1f3f6;
+  --card-background: #fff;
+  --border-color: #e0e0e0;
+}
+
+/* Override Bootstrap variables if needed */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #1a5fcc; /* Darker shade of primary */
+  border-color: #1a5fcc;
+}
+
+/* Main content padding */
+main {
+  padding-top: 20px; /* Adjust based on header height */
+  padding-bottom: 20px; /* Adjust based on footer height */
+}
